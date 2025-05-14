@@ -62,7 +62,7 @@ AI:claude:@legal:Summarize NDA document
    - `logs/ai_clipboard.log`
 
 Dependencies:
-- `requests`, `tkinter`, `pyperclip`, `pystray`, `sv_ttk`, `darkdetect`, `Pillow`, `winsound` (Windows)
+- `requests`, `tkinter`, `pyperclip`, `pystray`, `sv_ttk`, `darkdetect`, `Pillow`, `winsound`
 
 You can install them via:
 
@@ -76,11 +76,15 @@ pip install -r requirements.txt
 
 Settings are stored in `config/config.json`:
 
-* `prefix`: Trigger prefix for clipboard text (e.g., `"AI:"`)
+* `base_url`: API endpoint (default is `"https://openrouter.ai/api/v1"`)
+* `api_key`: Your OpenRouter API key
+* `prefix`: Trigger prefix for clipboard commands (e.g., `"AI:"`)
+* `clipboard_refresh_interval`: How often the clipboard is checked (in ms, minimum `100`)
 * `default_model`: Model used when no shortcut is specified
-* `model_shortcuts`: Mapping of shortcut keys to model IDs
-* `default_system_instruction`: Optional global behavior prompt
-* `clipboard_refresh_interval`: How often clipboard is checked (in ms, min 100)
+* `model_shortcuts`: Mapping of shortcut names to full model IDs
+* `custom_system_instruction`: Optional system prompt to override model behavior
+* `use_custom_prompt`: Whether to apply the custom system instruction
+* `balance_usd`: Approximate API usage cost (auto-updated)
 
 ---
 
