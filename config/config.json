@@ -1,0 +1,16 @@
+{
+  "base_url": "https://openrouter.ai/api/v1",
+  "api_key": "",
+  "prefix": "AI:",
+  "clipboard_refresh_interval": 500,
+  "custom_system_instruction": "",
+  "use_custom_prompt": false,
+  "default_model": "openai/gpt-4o-mini",
+  "model_shortcuts": {
+    "claude": "anthropic/claude-3.7-sonnet",
+    "deepseek": "deepseek/deepseek-r1",
+    "grok": "x-ai/grok-3-mini-beta",
+    "gemini": "google/gemini-2.5-flash-preview"
+  },
+  "balance_usd": 0.00
+}

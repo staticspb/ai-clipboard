@@ -1,0 +1,7 @@
+requests
+pyperclip
+pystray
+pillow
+sv-ttk
+darkdetect
+pywinstyles
