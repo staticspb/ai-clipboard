@@ -44,11 +44,11 @@ AI:claude:@legal:Summarize NDA document
 
 **Light mode**
 
-![Light Mode](screenshot/screenshot-light.png)
+![Light Mode](https://raw.githubusercontent.com/staticspb/ai-clipboard/refs/heads/master/screenshots/screenshot-light.png)
 
 **Dark mode**
 
-![Dark Mode](screenshot/screenshot-dark.png)
+![Dark Mode](https://raw.githubusercontent.com/staticspb/ai-clipboard/refs/heads/master/screenshots/screenshot-dark.png)
 
 ---
 
