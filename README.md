@@ -99,6 +99,86 @@ Examples:
 * `AI:gpt:hello` → sent to model shortcut `gpt`
 * `AI:@docs:explain this` → sent with context from `docs.md`
 
+Here’s a README section explaining the compiled version and how users can extract or build their own EXE from the source code:
+
+---
+
+## AI Clipboard - Compiled Version
+
+We have made it easy for you to use **AI Clipboard** as a standalone Windows executable (EXE). The **compiled** version of the app can be found in the `compiled` directory of this repository.
+
+### How to Use the Precompiled EXE
+
+1. **Download the ZIP**:
+
+   * Download the ZIP file `AI-Clipboard-Py-2-Exe.zip` from the `compiled` directory.
+
+2. **Extract the Files**:
+
+   * Extract the contents of the ZIP file to a location of your choice.
+
+3. **Run the EXE**:
+
+   * Inside the extracted folder, you will find `AI Clipboard.exe`. Double-click it to run the application.
+   * The following directories should be kept next to the `AI Clipboard.exe` file:
+
+     * `icons/`: Contains the application icon.
+     * `knowledge/`: Contains example `.md` files.
+     * `sounds/`: Contains required `.wav` files for notifications and toasts.
+
+   Ensure that the directory structure is maintained, so the application can access all the necessary resources.
+
+### How to Build Your Own EXE from Source Code
+
+If you would like to build your own version of the **AI Clipboard** EXE, follow these steps:
+
+1. **Install Required Dependencies**:
+
+   * Make sure you have Python installed on your system.
+   * Install the necessary Python packages by running:
+
+     ```
+     pip install -r requirements.txt
+     ```
+
+2. **Install PyInstaller**:
+
+   * Install PyInstaller, which is used to create the EXE:
+
+     ```
+     pip install pyinstaller
+     ```
+
+3. **Compile the EXE**:
+
+   * Open a command prompt or terminal window and navigate to the project directory.
+   * Run the following PyInstaller command to compile the script:
+
+     ```
+     pyinstaller --noconfirm --onedir --console --icon "path\to\icon.ico" --name "AI Clipboard" --upx-dir "path\to\UPX" "path\to\ai-clipboard.pyw"
+     ```
+
+     Replace the paths with the correct directories on your system. Ensure that you specify:
+
+     * `--icon` to point to the `.ico` file.
+     * `--upx-dir` to point to your UPX directory (if you're using UPX to compress the EXE).
+
+4. **Retrieve Your EXE**:
+
+   * After PyInstaller finishes, you will find the compiled `AI Clipboard.exe` in the `output` folder.
+
+5. **Organize the Files**:
+
+   * Place the following directories alongside the EXE:
+
+     * `icons/` — The icon directory with your `icon.ico`.
+     * `knowledge/` — The directory containing your knowledge files (e.g., `.md` files).
+     * `sounds/` — The directory containing the `.wav` files.
+
+6. **Test Your EXE**:
+
+   * Run the generated EXE to ensure that everything works as expected.
+
 ---
 
 ## License
